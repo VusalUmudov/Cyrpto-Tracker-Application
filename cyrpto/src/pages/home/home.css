@@ -1,0 +1,134 @@
+body{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/403/467/730/technology-bitcoin-coin-money-wallpaper-preview.jpg);
+    background-color: rgb(204, 204, 204);
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px 0px;
+}
+.table-all-container{
+    width: 60%;
+    height: fit-content;
+    z-index: 1000;
+    background-color: rgb(207, 216, 220);
+    border-radius: 5px;
+    padding: 8px 20px;
+    box-shadow: rgb(255 255 255) 0px 3px 20px;
+    transition: all 0.5s ease 0s;
+    margin-bottom: 50px;
+}
+.table-container{
+    width: 98%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: white;
+    height: 600px;
+    box-shadow: rgb(255 255 255 / 50%) 0px 3px 5px;
+    overflow: auto;
+    font-family: Poppins, sans-serif;
+}
+
+img {
+    width: 30px;
+    display: inline-block;
+    transform: translateY(9px);
+    transition: all 0.5s ease 0s;
+}
+th{
+    border: none;
+    padding: 15px 5px;
+    font-weight: 700;
+    transition: all 0.5s ease 0s;
+}
+th:hover{
+    background-color: rgba(75, 99, 110, 0.4);
+    cursor: pointer;
+}
+td{
+    text-align: center;
+    padding: 15px 5px;
+    margin: 0px 10px;
+    font-weight: 500;
+    transition: all 0.5s ease 0s;
+}
+td Button{
+    gap: 10px;
+}
+tr{
+    border: none;
+    transition: background-color 0.7s ease 0s;
+}
+tbody tr:hover{
+    background-color: rgb(220, 220, 220);
+    cursor: pointer;
+}
+.product-name{
+    text-align: left!important;
+    transform: translateY(-7px);
+    width: 15%;
+}
+.market-cap{
+    color: #bebebe;
+    width: 25%;
+}
+table {
+    width: 100%;
+    border-spacing: 0px;
+    padding: 0px 10px;
+    font-family: Poppins, sans-serif;
+}
+.table-text{
+    width: 100%;
+    display: flex;
+    font-family: Roboto Mono,monospace;
+}
+.table-text h2{
+    margin: 0px;
+    padding: 10px 0px;
+    font-weight: 700;
+    display: inline-block;
+    color: rgb(75, 99, 110);
+}
+.input-div{
+    display: inline-block;
+    width: fit-content;
+    transform: translateY(10px);
+    position: relative;
+    margin-left: auto;
+    margin-right: 40px;
+}
+input{
+    width: 100%;
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 18px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.2s ease 0s;
+    box-shadow: rgb(255 255 255 / 60%) 0px 4px 12px;
+}
+.input-div svg{
+    position: absolute;
+    right: -25px;
+    top: 3px;
+    font-size: 30px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 4px;
+    transition: all 0.2s ease 0s;
+    color: rgba(0, 0, 0, 0.8);
+}

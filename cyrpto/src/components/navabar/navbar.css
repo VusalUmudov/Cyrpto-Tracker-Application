@@ -1,0 +1,22 @@
+nav{   
+    display: "flex";
+    justify-content: "space-between";
+    padding: "10px 50px";
+    font-size: "20px";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(207, 216, 220, 0.6);
+}
+.link-style{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    transition: all 0.5s ease 0s;
+
+}
+.link-style:hover{
+    color: rgb(90, 64, 34);
+}
