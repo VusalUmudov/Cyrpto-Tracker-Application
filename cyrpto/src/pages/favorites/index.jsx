@@ -8,6 +8,7 @@ import {
   removeProductFromFavorites,
 } from "redux/slice/favorites";
 import { Button } from "@mui/material";
+import { Toaster } from "react-hot-toast";
 
 const Favorites = () => {
   const { products } = useSelector((state) => state.favorites);
@@ -19,7 +20,7 @@ const Favorites = () => {
       <div className='container'>
 
         <div className='table-all-container'>
-          <Button variant="contained" color="error" className="clearBtn" onClick={() => dispatch(clearFavorites())}>Clear</Button>
+          <Button variant="contained" color="error" className="clearBtn" onClick={() => dispatch(clearFavorites())}><Toaster/>Clear</Button>
           <div className='table-container'>
             <table>
               <thead>
@@ -43,6 +44,7 @@ const Favorites = () => {
                     <td className='market-cap'>${product.market_cap}</td>
                     <td><Button variant="outlined" color="error" className="removeBtn" onClick={() => dispatch(removeProductFromFavorites(product.id))}
                     >
+                      <Toaster/>
                       Remove
                     </Button></td>
                   </tr>

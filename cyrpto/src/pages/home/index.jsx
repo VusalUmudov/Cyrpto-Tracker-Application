@@ -7,6 +7,7 @@ import { getProducts } from 'service/getProducts'
 import './home.css';
 import { Button } from '@mui/material';
 import Footer from 'components/footer/Footer';
+import { Toaster } from 'react-hot-toast'
 
 function Home() {
 
@@ -59,8 +60,9 @@ function Home() {
                     <td>${product.current_price}</td>
                     <td>{product.price_change_percentage_24h}</td>
                     <td className='market-cap'>${product.market_cap}</td>
-                    <td><Button variant="outlined" className='favoriteBtn' onClick={() => { dispatch(addProductToFavorites(product)); }}
+                    <td><Button variant="outlined" className='favoriteBtn' onClick={() => { dispatch(addProductToFavorites(product));}}
                     >
+                       <Toaster/>
                       <FavoriteBorderOutlinedIcon /> Favorite
                     </Button></td>
                   </tr>
